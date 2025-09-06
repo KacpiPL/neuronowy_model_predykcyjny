@@ -5,17 +5,18 @@ It also includes a minimal web UI (HTML form) to make predictions interactively.
 
 ## Project Structure
 
+```plaintext
 neuronowy_model_predykcyjny/
-├── artifacts/           - trained model and scaler are saved here  
-│   ├── model.joblib  
-│   └── scaler.joblib  
-├── templates/           - HTML templates for the web UI  
-│   └── index.html  
-├── app.py               - FastAPI app serving predictions and the UI  
-├── train.py             - script to train the model and save artifacts  
-├── pyproject.toml       - project dependencies (for uv)  
-├── uv.lock              - lock file with pinned dependencies  
-└── .gitignore 
+├── artifacts/           # trained model and scaler are saved here
+│   ├── model.joblib
+│   └── scaler.joblib
+├── templates/           # HTML templates for the web UI
+│   └── index.html
+├── app.py               # FastAPI app serving predictions and the UI
+├── train.py             # script to train the model and save artifacts
+├── pyproject.toml       # project dependencies (for uv)
+├── uv.lock              # lock file with pinned dependencies
+└── .gitignore
 
 ## Model
 
@@ -41,7 +42,7 @@ This project uses [uv](https://github.com/astral-sh/uv) for dependency managemen
 
     uv run python train.py  
 
-    This will generate the artifacts/ folder with the trained model and scaler. The basic model is already trained, so you can skip this step.
+This will generate the artifacts/ folder with the trained model and scaler. The basic model is already trained, so you can skip this step.
 
 ### 3. Run the FastAPI app:
 
