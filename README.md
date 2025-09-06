@@ -17,6 +17,7 @@ neuronowy_model_predykcyjny/
 ├── pyproject.toml       # project dependencies (for uv)
 ├── uv.lock              # lock file with pinned dependencies
 └── .gitignore
+```
 
 ## Model
 
