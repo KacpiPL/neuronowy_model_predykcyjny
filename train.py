@@ -1,4 +1,3 @@
-# train.py
 import joblib
 from pathlib import Path
 from sklearn.datasets import load_iris
